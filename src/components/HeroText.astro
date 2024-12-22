@@ -4,13 +4,10 @@ interface Props {
     title1?: string;
     title2?: string;
     title3?: string;
+    title4?: string;
 }
 
-const {
-    title1 ,
-    title2,
-    title3 ,
-} = Astro.props;
+const { title1, title2, title3,title4 } = Astro.props;
 ---
 
 <div class="relative w-full">
@@ -18,14 +15,25 @@ const {
         <div class="relative">
             <!-- Red vertical line -->
             <div class="absolute left-0 top-0 w-1 h-full bg-[#D40000]"></div>
-            
+
             <!-- Text content with left padding for the line -->
             <div class="pl-6">
                 <div class="max-w-2xl">
                     <h1 class="text-white font-bold">
-                        <span class="block text-3xl md:text-4xl lg:text-5xl mb-2">{title1}</span>
-                        <span class="block text-3xl md:text-4xl lg:text-5xl mb-2">{title2}</span>
-                        <span class="block text-3xl md:text-4xl lg:text-5xl">{title3}</span>
+                        <span
+                            class="block text-3xl md:text-4xl lg:text-5xl mb-2"
+                            >{title1}</span
+                        >
+                        <span
+                            class="block text-3xl md:text-4xl lg:text-5xl mb-2"
+                            >{title2}</span
+                        >
+                        <span class="block text-3xl md:text-4xl lg:text-5xl"
+                            >{title3}</span
+                        >
+                        <span class="block text-3xl md:text-4xl lg:text-5xl"
+                        >{title4}</span
+                    >
                     </h1>
                 </div>
             </div>
