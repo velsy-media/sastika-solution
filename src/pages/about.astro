@@ -2,10 +2,30 @@
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Layout from '../layouts/Layout.astro';
+
+import HeroText from "../components/HeroText.astro";
 ---
 
 <Layout>
 	
-	<Navbar currentPath={Astro.url.pathname}/>
+	<Navbar currentPath="/about"/>
+	<section class="relative">
+		<!-- Background image -->
+		<div class="absolute inset-0 z-0">
+			<img
+				src="/hero-image/about.svg"
+				alt="Background"
+				class="w-full h-full object-cover brightness-75"
+			/>
+		</div>
+
+		<!-- Overlay to darken the image -->
+		<div class="absolute inset-0 bg-black/40 z-10"></div>
+
+		<!-- Hero text component -->
+		<div class="relative z-20">
+			<HeroText />
+		</div>
+	</section>
 	<Footer/>
 </Layout>
