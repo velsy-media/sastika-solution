@@ -7,6 +7,8 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
+	<Navbar currentPath="/contact" />
+
 	<section class="relative">
 		<!-- Background image -->
 		<div class="absolute inset-0 z-0">
@@ -22,7 +24,7 @@ import Layout from "../layouts/Layout.astro";
 
 		<!-- Hero text component -->
 		<div class="relative z-20">
-			<HeroText />
+			<HeroText title1="Here To Assist You" title2="With Every Step Of" title3="Your Global Journey."/>
 		</div>
 	</section>
 	<section class="max-w-6xl mx-auto px-4 py-16">
@@ -102,6 +104,5 @@ import Layout from "../layouts/Layout.astro";
 			</div>
 		</div>
 	</section>
-	<Navbar currentPath={Astro.url.pathname} />
 	<Footer />
 </Layout>
