@@ -1,0 +1,41 @@
+---
+// HeroText.astro
+interface Props {
+    title?: string;
+    subtitle?: string;
+    description?: string;
+}
+
+const {
+    title = "Here To Assist You",
+    subtitle = "With Every Step Of",
+    description = "Your Global Journey."
+} = Astro.props;
+---
+
+<div class="relative w-full">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+        <div class="relative">
+            <!-- Red vertical line -->
+            <div class="absolute left-0 top-0 w-1 h-full bg-[#D40000]"></div>
+            
+            <!-- Text content with left padding for the line -->
+            <div class="pl-6">
+                <div class="max-w-2xl">
+                    <h1 class="text-white font-bold">
+                        <span class="block text-3xl md:text-4xl lg:text-5xl mb-2">{title}</span>
+                        <span class="block text-3xl md:text-4xl lg:text-5xl mb-2">{subtitle}</span>
+                        <span class="block text-3xl md:text-4xl lg:text-5xl">{description}</span>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    h1 {
+        line-height: 1.2;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+</style>

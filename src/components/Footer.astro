@@ -1,0 +1,126 @@
+---
+// Footer.astro
+
+const socialLinks = [
+    { name: "Instagram", icon: "/icons/instagram.svg", url: "#" },
+    { name: "Twitter", icon: "/icons/twitter.svg", url: "#" },
+    { name: "Facebook", icon: "/icons/facebook.svg", url: "#" },
+    { name: "WhatsApp", icon: "/icons/whatsapp.svg", url: "#" },
+];
+---
+
+<footer class="bg-[#D40000] text-white py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Company Description -->
+            <div class="space-y-4">
+                <h2 class="text-xl font-bold">Sastika Solution</h2>
+                <p class="text-sm text-gray-100">
+                    Sastika Solutions connects skilled Indian professionals with
+                    global opportunities. We simplify work permits, placements,
+                    ensuring a seamless path to success. Let's build brighter
+                    futures together.
+                </p>
+                <div class="flex space-x-4 mt-4">
+                    {
+                        socialLinks.map(({ name, icon, url }) => (
+                            <a
+                                href={url}
+                                class="hover:opacity-80 transition-opacity"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <span class="sr-only">{name}</span>
+                                <img
+                                    src={icon}
+                                    alt={name}
+                                    class="w-6 h-6 object-contain invert"
+                                    width="24"
+                                    height="24"
+                                />
+                            </a>
+                        ))
+                    }
+                </div>
+                <p class="text-sm mt-4">©Sastika Solution</p>
+            </div>
+
+            <!-- Company Links -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold">Company</h3>
+                <ul class="space-y-2">
+                    <li>
+                        <a href="/" class="text-sm hover:underline">Home</a>
+                    </li>
+                    <li>
+                        <a href="/services" class="text-sm hover:underline"
+                            >Services</a>
+                    </li>
+                    <li>
+                        <a href="/about" class="text-sm hover:underline"
+                            >About</a>
+                    </li>
+                    <li>
+                        <a href="/contact" class="text-sm hover:underline"
+                            >Contact us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Why us? -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold">Why us?</h3>
+                <ul class="space-y-2">
+                    <li class="text-sm">Trusted Global Connections</li>
+                    <li class="text-sm">Seamless Visa Assistance</li>
+                    <li class="text-sm">Personalized Job Placements</li>
+                    <li class="text-sm">Commitment to Excellence</li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold">Contact us</h3>
+                <ul class="space-y-3">
+                    <li class="text-sm flex items-start">
+                        <img
+                            src="/icons/location.svg"
+                            alt="Location"
+                            class="w-5 h-5 mr-2 mt-1 invert"
+                        />
+                        Labour well street, Velachery, Chennai.
+                    </li>
+                    <li class="text-sm flex items-center">
+                        <img
+                            src="/icons/email.svg"
+                            alt="Email"
+                            class="w-5 h-5 mr-2 invert"
+                        />
+                        <a
+                            href="mailto:support@sastika.eu"
+                            class="hover:underline"
+                        >
+                            support@sastika.eu
+                        </a>
+                    </li>
+                    <li class="text-sm flex items-center">
+                        <img
+                            src="/icons/phone.svg"
+                            alt="Phone"
+                            class="w-5 h-5 mr-2 invert"
+                        />
+                        <a href="tel:+919862055297" class="hover:underline">
+                            +91 9862055297
+                        </a>
+                    </li>
+                </ul>
+                <a
+                    href="/quote"
+                    class="inline-block bg-white text-[#D40000] px-6 py-2 rounded-full font-medium text-sm mt-4 hover:bg-gray-100 transition-colors"
+                >
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
