@@ -6,7 +6,7 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout>
 	<Navbar currentPath="/services"/>
-	<main class="min-h-screen flex flex-col items-center py-10">
+	<main class="relative min-h-screen flex flex-col items-center py-10">
 		<!-- Background Section -->
 		<div class="relative w-full h-64 bg-blue-900">
 		  <img 
@@ -18,7 +18,7 @@ import Layout from '../layouts/Layout.astro';
 	  
 		
   <!-- Services Section -->
-  <section class="container-float mx-auto px-6 py-10">
+  <section class="containers">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       <!-- Card 1 -->
       <div class="bg-white p-6 rounded-lg shadow-md text-center">
@@ -67,7 +67,7 @@ import Layout from '../layouts/Layout.astro';
 
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
 		<!-- Card 1 -->
-		<div class="bg-white p-6 rounded-lg shadow-md text-center">
+		<div class="bg-white p-6 rounded-lg shadow-md text-center ">
 		  <div class="w-12 h-12 mx-auto bg-red-500 rounded-md flex items-center justify-center mb-4 ">
 			  <img 
 			  src="/service/img4.svg" 
@@ -81,7 +81,7 @@ import Layout from '../layouts/Layout.astro';
 		  </p>
 		</div>
 		<!-- Card 2 -->
-		<div class="bg-white p-6 rounded-lg shadow-md text-center">
+		<div class="bg-white p-6 rounded-lg shadow-md text-center ">
 		  <div class="w-12 h-12 mx-auto bg-red-500 text-white rounded-md flex items-center justify-center mb-4">
 			  <img 
 			  src="/service/img5.svg" 
@@ -125,7 +125,7 @@ import Layout from '../layouts/Layout.astro';
 	  
 		<!-- Button -->
 		<a
-		  href="#"
+		  href="/contact"
 		  class="mt-4 sm:mt-0 sm:ml-4 bg-white text-orange-500 font-semibold py-2 px-6 rounded-full shadow-lg flex items-center space-x-2 hover:bg-gray-100 transition"
 		>
 		  <span>Get in Touch</span>
@@ -147,5 +147,3 @@ import Layout from '../layouts/Layout.astro';
 	  </div>
 	<Footer/>
 </Layout>
-
-
