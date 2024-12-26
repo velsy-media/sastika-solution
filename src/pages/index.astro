@@ -2,10 +2,303 @@
 import Navbar from '../components/Navbar.astro';
 import Footer from '../components/Footer.astro';
 import Layout from '../layouts/Layout.astro';
+import HeroText from '../components/HeroText.astro';
 ---
 
 <Layout>
 	
 	<Navbar currentPath="/"/>
+	<section class="relative bg-cover bg-center h-[830px] flex items-center pl-9" style="background-image: url('/index/mainimg.svg');">
+		<div class="absolute inset-0 bg-black bg-opacity-50"></div>
+		<div class="relative z-10 max-w-4xl text-white">
+		  <h1 class="text-xl md:text-6xl font-extrabold leading-tight">
+			Connecting Talent to Opportunity, Making Global Success Simple and Seamless.
+		  </h1>
+		  <p class="mt-4 text-lg">
+			At Sastika Solutions, we specialize in connecting India’s talent with international opportunities, providing end-to-end support for visas, work permits, and placements. Our mission is to make global career dreams a seamless reality for both job seekers and employers.
+		  </p>
+		  <div class="mt-6 flex flex-wrap gap-4">
+			<a href="#" class="bg-[#D40000] text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-red-600 transition">
+			  Contact Us ➚
+			</a>
+			<a href="#" class="bg-transparent text-white border border-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 hover:text-[#D40000] transition">
+			  Our Services ➚
+			</a>
+		  </div>
+		</div>
+	  </section>
+
+	  <section class="bg-gray-50 py-12 px-6 md:px-12 lg:px-20">
+		<div class="max-w-7xl mx-auto">
+			 <!-- Mission & Vision Section -->
+			 <div class="grid md:grid-cols-2 gap-8 items-center mt-16">
+				<div class="order-1 md:order-none ">
+					
+				  
+				  	<h2 class="text-3xl md:text-4xl font-bold">
+        				Your Trusted Partner In Global Recruitment And <span class="text-[#D40000] ">Job Placements.</span>
+      				</h2>
+				  
+				  	<p class="text-black-600 mb-6">
+						Sastika Solutions offers comprehensive recruitment services that bridge skilled Indian professionals with global opportunities. From visa assistance to job placements, we manage every step of the process for both candidates and employers, ensuring a smooth and efficient journey.
+				  	</p>
+				  
+					  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+						<!-- Feature 1 -->
+						<div class="flex">
+						  <div class="bg-red-100 text-red-500 w-8 h-8 mx-2 rounded-full flex items-center justify-center">
+							<span class="text-2xl">✓</span>
+						  </div>
+						  <p class="font-semibold">Full process support</p>
+						</div>
+						<!-- Feature 2 -->
+						<div class="flex">
+						  <div class="bg-red-100 text-red-500 w-8 h-8 mx-2 rounded-full flex items-center justify-center">
+							<span class="text-2xl">✓</span>
+						  </div>
+						  <p class="font-semibold">Customized recruitment solutions</p>
+						</div>
+						<!-- Feature 3 -->
+						<div class="flex">
+						  <div class="bg-red-100 text-red-500 w-8 h-8 mx-2 rounded-full flex items-center justify-center">
+							<span class="text-2xl">✓</span>
+						  </div>
+						  <p class="font-semibold">Work permit assistance</p>
+						</div>
+						<!-- Feature 4 -->
+						<div class="flex">
+						  <div class="bg-red-100 text-red-500 w-8 h-8 mx-2 rounded-full flex items-center justify-center">
+							<span class="text-2xl">✓</span>
+						  </div>
+						  <p class="font-semibold">Global employer network</p>
+						</div>
+					  </div>
+				
+				  	<a 
+					href="#" 
+					class="bg-[#D40000] text-white px-6 py-2 rounded-lg font-medium hover:bg-red-500">
+					About us ➚
+				  	</a>
+				
+				</div>
+				<div class="flex items-center justify-center overflow-hidden">
+					<img 
+					  src="/index/img1.svg" 
+					  alt="Teamwork"
+					  class="w-80 h-80 rounded-lg object-cover"
+					/>
+				  </div>
+			  </div>
+
+
+		  
+		   <!-- How we make this happen -->
+			<div class="grid md:grid-cols-2 gap-8 mt-16">
+				<div class="flex items-center justify-center overflow-hidden">
+				  <img 
+					src="/index/img2.svg" 
+					alt="Teamwork" 
+					class="w-70 h-80 rounded-lg object-cover"
+				  />
+				</div>
+				<div class="order-1 md:order-none">
+				 
+			<div class="order-1 md:order-none ">
+				
+				<h2 class="text-3xl md:text-4xl font-bold">
+					Transforming Businesses, <span class="text-[#D40000] ">Elevating Careers.</span>
+				  </h2>
+			  
+				  <p class="mt-4 text-gray-600 text-lg">
+					We help businesses grow by connecting them with top-tier talent from India while empowering professionals to elevate their careers through international opportunities. Our personalized approach ensures a perfect match, driving success for both employers and candidates.
+				  </p>
+				  
+				  <!-- Features Section -->
+				  <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-center">
+				  <!-- Feature 1 -->
+				  <div >
+					<div class="bg-[#D40000] w-16 h-16 mx-auto rounded-full flex items-center justify-center ">
+						<img src="/icons/indexicon1.svg"/>
+					  </div>
+					  <div class="ml-4">
+						<h3 class="text-lg font-semibold">Streamlined Recruitment for Employers</h3>
+						<p class="mt-2 text-gray-600">
+						  We provide customized solutions that align with your business goals, ensuring the best talent to drive your company’s success.
+						</p>
+					  </div>
+				  </div>
+				  <!-- Feature 2 -->
+				  <div >
+					<div class="bg-[#D40000] mx-auto w-16 h-16 rounded-full flex items-center justify-center">
+						<img src="/icons/indexicon2.svg"/>
+					  </div>
+					  <div class="ml-4">
+						<h3 class="text-lg font-semibold">Empowering Professionals for Global Success</h3>
+						<p class="mt-2 text-gray-600">
+						  We guide candidates through every step, from visa assistance to job placement, helping them secure rewarding global careers.
+						</p>
+					  </div>
+				  </div>
+				  <a 
+					href="#" 
+					class="bg-[#D40000] text-white px-9 py-2 rounded-lg font-medium hover:bg-red-500">
+					Our Services ➚
+				  	</a>
+					<div class="flex items-center space-x-4">
+							<!-- Icon -->
+							<div class="flex items-center justify-center w-12 h-12 border-2 border-red-500 rounded-lg">
+							  <img src="/icons/contacticon.svg"/>
+							</div>
+						  
+							<!-- Contact Information -->
+							<div>
+							  <h3 class="font-semibold text-lg">Contact Us</h3>
+							  <p class="text-gray-600">+91 32131 34234</p>
+							</div>
+						  </div>
+		          </div>
+				</div>
+			</div>
+			</div>
+		
+		<div class="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-400 rounded-lg p-8 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-4xl mb-8 mx-auto shadow-lg mt-16">
+			<!-- Text Section -->
+			<div>
+			  <h2 class="text-2xl font-bold">Ready to Take the First Step?</h2>
+			  <p class="mt-2 text-sm sm:text-base">
+				Step into endless possibilities with Swastika Solutions. Whether finding talent or chasing dreams abroad, we make it seamless and effortless.
+			  </p>
+			</div>
+		  
+			<!-- Button -->
+			<a
+			  href="#"
+			  class="mt-4 sm:mt-0 sm:ml-4 bg-white text-orange-500 font-semibold py-2 px-6 rounded-full shadow-lg flex items-center space-x-2 hover:bg-gray-100 transition"
+			>
+			  <span>Get in Touch</span>
+			  <svg
+				xmlns="http://www.w3.org/2000/svg"
+				class="w-4 h-4"
+				fill="none"
+				viewBox="0 0 24 24"
+				stroke="currentColor"
+				stroke-width="2"
+			  >
+				<path
+				  stroke-linecap="round"
+				  stroke-linejoin="round"
+				  d="M9 5l7 7-7 7"
+				/>
+			  </svg>
+			</a>
+		  </div>
+
+		  <!-- How we make this happen -->
+			<div class="grid md:grid-cols-2 gap-8 mt-16">
+				<div class="flex items-center justify-center overflow-hidden">
+				  <img 
+					src="/index/img3.svg" 
+					alt="Teamwork" 
+					class="w-100 h-80 rounded-lg object-cover"
+				  />
+				</div>
+				<div class="order-1 md:order-none">
+				  <div class="flex">
+					  <img src="/icons/icon3.svg" alt="Teamwork"class="rounded-lg object-cover"/>
+					  <p class="text-black-600 text-lg mx-2">Solutions Tailored for Global Success</p>
+				  </div>
+				  
+				  <h2 class="text-5xl font-bold text-gray-800 mb-4">Area of <span class="text-[#D40000]">Expertise</span></h2>
+				  <p class="text-gray-800 mb-5">
+					At Sastika Solutions, we excel in simplifying the complexities of international career transitions. From securing work permits and visas to connecting you with top global employers, our specialized services are designed to make your journey seamless. With personalized support and unmatched expertise, we empower you to unlock your full potential on a global stage.
+				  </p>
+				  <a 
+					href="#" 
+					class="bg-[#D40000] text-white px-6 py-2 rounded-lg font-medium hover:bg-red-600">
+					Our Services ➚
+				  </a>
+				</div>
+			  </div>
+
+
+			  <div class="relative overflow-hidden mt-16 scrollbar-hide">
+				<div class="flex gap-6 overflow-x-auto scroll-smooth snap-x snap-mandatory scrollbar-hide">
+				  <!-- Testimonial 1 -->
+				  <div class="flex-shrink-0 snap-start bg-[#EFEFEF] rounded-lg shadow-md w-[90%] md:w-[30%] p-6">
+					<div class="text-yellow-500 text-xl mb-2 text-center">
+					  ⭐⭐⭐⭐⭐
+					</div>
+					<p class="text-gray-700">
+					  "I am impressed by their expertise and commitment to excellence. Their efficient solutions and proactive services have consistently exceeded my expectations, making them our trusted partner."
+					</p>
+					<div class="mt-4 flex items-center">
+					  <img src="/icons/person.svg" alt="Shohid" class="w-10 h-10 rounded-full">
+					  <div class="ml-3">
+						<h4 class="text-gray-900 font-medium">Shahid</h4>
+						<span class="text-gray-500 text-sm">Company 3</span>
+					  </div>
+					</div>
+				  </div>
+			  
+				  <!-- Testimonial 2 -->
+				  <div class="flex-shrink-0 snap-start bg-red-800 text-white rounded-lg shadow-md w-[90%] md:w-[30%] p-6">
+					<div class="text-yellow-400 text-xl mb-2 text-center">
+					  ⭐⭐⭐⭐⭐
+					</div>
+					<p>
+					  "I am impressed by their expertise and commitment to excellence. Their efficient solutions and proactive services have consistently exceeded my expectations, making them our trusted partner."
+					</p>
+					<div class="mt-4 flex items-center">
+					  <img src="/icons/person.svg" alt="Sanjoy Sagar" class="w-10 h-10 rounded-full">
+					  <div class="ml-3">
+						<h4 class="font-medium">Sanjoy Sagar</h4>
+						<span class="text-gray-300 text-sm">Company 1</span>
+					  </div>
+					</div>
+				  </div>
+			  
+				  <!-- Testimonial 3 -->
+				  <div class="flex-shrink-0 snap-start bg-[#EFEFEF] rounded-lg shadow-md w-[90%] md:w-[30%] p-6">
+					<div class="text-yellow-500 text-xl mb-2 text-center">
+					  ⭐⭐⭐⭐⭐
+					</div>
+					<p class="text-gray-700">
+					  "I am impressed by their expertise and commitment to excellence. Their efficient solutions and proactive services have consistently exceeded my expectations, making them our trusted partner."
+					</p>
+					<div class="mt-4 flex items-center">
+					  <img src="/icons/person.svg" alt="Dharshan" class="w-10 h-10 rounded-full">
+					  <div class="ml-3">
+						<h4 class="text-gray-900 font-medium">Dharshan</h4>
+						<span class="text-gray-500 text-sm">Company 2</span>
+					  </div>
+					</div>
+				  </div>
+				   <!-- Testimonial 4 -->
+				   <div class="flex-shrink-0 snap-start bg-red-800 text-white rounded-lg shadow-md w-[90%] md:w-[30%] p-6">
+					<div class="text-yellow-500 text-xl mb-2 text-center">
+					  ⭐⭐⭐⭐⭐
+					</div>
+					<p>
+					  "I am impressed by their expertise and commitment to excellence. Their efficient solutions and proactive services have consistently exceeded my expectations, making them our trusted partner."
+					</p>
+					<div class="mt-4 flex items-center">
+					  <img src="/icons/person.svg" alt="Dharshan" class="w-10 h-10 rounded-full">
+					  <div class="ml-3">
+						<h4 class="font-medium">Dharshan</h4>
+						<span class="text-sm">Company 4</span>
+					  </div>
+					</div>
+				  </div>
+				</div>
+			  
+				</div>
+		
+</section>
+
+
+
+
+
+
 	<Footer/>
 </Layout>

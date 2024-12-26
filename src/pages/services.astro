@@ -5,7 +5,147 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	
 	<Navbar currentPath="/services"/>
+	<main class="min-h-screen flex flex-col items-center py-10">
+		<!-- Background Section -->
+		<div class="relative w-full h-64 bg-blue-900">
+		  <img 
+			src="/service/mainimg.svg" 
+			alt="Background Image" 
+			class="absolute inset-0 w-full h-full object-cover opacity-50"
+		  />
+		</div>
+	  
+		
+  <!-- Services Section -->
+  <section class="container-float mx-auto px-6 py-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <div class="w-12 h-12 mx-auto bg-red-500 rounded-md flex items-center justify-center mb-4">
+			<img 
+			src="/service/img1.svg" 
+			alt="Teamwork" 
+			class="object-cover"
+		  />
+        </div>
+        <h3 class="text-lg font-bold">Global Recruitment Solutions</h3>
+        <p class="text-sm text-gray-600 mt-2">
+			We connect skilled Indian professionals with global employers, providing tailored job matches across diverse industries such as IT, healthcare, engineering, and finance.
+        </p>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-md text-center">
+        <div class="w-12 h-12 mx-auto bg-red-500 text-white rounded-md flex items-center justify-center mb-4">
+			<img 
+			src="/service/img2.svg" 
+			alt="Teamwork" 
+			class=" object-cover"
+		  />
+        </div>
+        <h3 class="text-lg font-bold">Visa Assistance</h3>
+        <p class="text-sm text-gray-600 mt-2">
+			Navigating international visa processes is made simple with our expert support. We assist with documentation, submission, and compliance, ensuring a hassle-free experience for candidates embarking on global careers.
+        </p>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+        <div class="w-12 h-12 mx-auto bg-red-500 text-white rounded-md flex items-center justify-center mb-4">
+			<img 
+			src="/service/img3.svg" 
+			alt="Teamwork" 
+			class=" object-cover"
+		  />
+        </div>
+        <h3 class="text-lg font-bold">Onboarding Assistance</h3>
+        <p class="text-sm text-gray-600 mt-2">
+			Transitioning to a new job and country can be challenging. Our onboarding support includes cultural orientation to ease adaptation, logistical assistance for relocation, and coordination for accommodations.
+        </p>
+      </div>
+    </div>
+
+
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+		<!-- Card 1 -->
+		<div class="bg-white p-6 rounded-lg shadow-md text-center">
+		  <div class="w-12 h-12 mx-auto bg-red-500 rounded-md flex items-center justify-center mb-4 ">
+			  <img 
+			  src="/service/img4.svg" 
+			  alt="Teamwork" 
+			  class=" object-cover"
+			/>
+		  </div>
+		  <h3 class="text-lg font-bold">Training and Development</h3>
+		  <p class="text-sm text-gray-600 mt-2">
+			We empower professionals to excel in global markets through tailored training programs. From interview coaching to skill enhancement, we prepare candidates to meet international job standards.
+		  </p>
+		</div>
+		<!-- Card 2 -->
+		<div class="bg-white p-6 rounded-lg shadow-md text-center">
+		  <div class="w-12 h-12 mx-auto bg-red-500 text-white rounded-md flex items-center justify-center mb-4">
+			  <img 
+			  src="/service/img5.svg" 
+			  alt="Teamwork" 
+			  class=" object-cover"
+			/>
+		  </div>
+		  <h3 class="text-lg font-bold">Employer Support Services</h3>
+		  <p class="text-sm text-gray-600 mt-2">
+			We provide global employers with end-to-end hiring solutions, including comprehensive candidate screening, thorough shortlisting, and efficient recruitment management.
+		  </p>
+		</div>
+		<!-- Card 3 -->
+		<div class="bg-white p-6 rounded-lg shadow-lg text-center">
+			<div class="w-12 h-12 mx-auto bg-red-500 text-white rounded-md flex items-center justify-center mb-4">
+			 <img 
+			  src="/service/img6.svg" 
+			  alt="Teamwork" 
+			  class="object-cover"
+			/>
+		  </div>
+		  <h3 class="text-lg font-bold">Long-Term Relationship Building</h3>
+		  <p class="text-sm text-gray-600 mt-2">
+			Navigating international visa processes is made simple with our expert support. We assist with documentation, submission, and compliance, ensuring a hassle-free experience.
+		  </p>
+		</div>
+	  </div>
+  </section>
+	
+	  </main>
+
+
+	  <div class="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-400 rounded-lg p-8 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-4xl mb-8 mx-auto shadow-lg">
+		<!-- Text Section -->
+		<div>
+		  <h2 class="text-2xl font-bold">Ready to Take the First Step?</h2>
+		  <p class="mt-2 text-sm sm:text-base">
+			Step into endless possibilities with Swastika Solutions. Whether finding talent or chasing dreams abroad, we make it seamless and effortless.
+		  </p>
+		</div>
+	  
+		<!-- Button -->
+		<a
+		  href="#"
+		  class="mt-4 sm:mt-0 sm:ml-4 bg-white text-orange-500 font-semibold py-2 px-6 rounded-full shadow-lg flex items-center space-x-2 hover:bg-gray-100 transition"
+		>
+		  <span>Get in Touch</span>
+		  <svg
+			xmlns="http://www.w3.org/2000/svg"
+			class="w-4 h-4"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+			stroke-width="2"
+		  >
+			<path
+			  stroke-linecap="round"
+			  stroke-linejoin="round"
+			  d="M9 5l7 7-7 7"
+			/>
+		  </svg>
+		</a>
+	  </div>
 	<Footer/>
 </Layout>
+
+
