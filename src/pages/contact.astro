@@ -4,20 +4,18 @@ import Footer from "../components/Footer.astro";
 
 import HeroText from "../components/HeroText.astro";
 import Layout from "../layouts/Layout.astro";
+const seo = {
+	title: "Global Job Placements & Visa Assistance - Sastika Solutions",
+	description:
+		"Sastika Solutions connects Indian professionals with global opportunities, offering visa support, work permits, and tailored recruitment solutions. Let us help you achieve your global career dreams.",
+	keywords:
+		"global job placements, visa assistance, work permits, international recruitment, Indian professionals abroad",
+};
 ---
 
-<Layout>
+<Layout {...seo}>
 
-	<head>
-		<title>Contact Us - Get in Touch with Sastika Solutions</title>
-		<meta name="description" content="Need help with visa assistance, job placements, or recruitment services? Contact Sastika Solutions today for seamless global career support.">
-		<meta name="keywords" content="contact Sastika Solutions, visa assistance support, global recruitment, Chennai-based recruitment agency">
-		<meta name="author" content="Sastika Solutions">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="robots" content="index, follow">
-	</head>
 
-	
 	<Navbar currentPath="/contact" />
 
 	<section class="relative">
