@@ -14,8 +14,6 @@ const seo = {
 ---
 
 <Layout {...seo}>
-
-
 	<Navbar currentPath="/contact" />
 
 	<section class="relative">
@@ -33,72 +31,95 @@ const seo = {
 
 		<!-- Hero text component -->
 		<div class="relative z-20">
-			<HeroText title1="Here To Assist You" title2="With Every Step Of" title3="Your Global Journey."/>
+			<HeroText
+				title1="Here To Assist You"
+				title2="With Every Step Of"
+				title3="Your Global Journey."
+			/>
 		</div>
 	</section>
 	<section class="max-w-6xl mx-auto px-4 py-16">
 		<!-- Font import in the head of your document -->
-		
-	
+
 		<div class="grid md:grid-cols-2 gap-12">
 			<!-- Left Column -->
 			<div class="space-y-12">
 				<div>
-					<h2 class="text-3xl font-bold">Talk To <span class="text-4xl text-[#D40000]">Us</span></h2>
+					<h2 class="text-3xl font-bold">
+						Talk To <span class="text-4xl text-[#D40000]">Us</span>
+					</h2>
 					<p class="mt-4 text-gray-600">
-						Got A Question Or Need Assistance? We're Here To Help! Whether You Have An Inquiry, Need Support, Or Just Want To Share Your Thoughts, Feel Free To Get In Touch.
+						Got A Question Or Need Assistance? We're Here To Help!
+						Whether You Have An Inquiry, Need Support, Or Just Want
+						To Share Your Thoughts, Feel Free To Get In Touch.
 					</p>
 					<p class="mt-4 text-xl font-semibold">+91 9872325297</p>
 				</div>
-	
+
 				<div>
-					<h2 class="text-3xl font-bold">Email your <span class="text-4xl text-[#D40000]">queries</span></h2>
+					<h2 class="text-3xl font-bold">
+						Email your <span class="text-4xl text-[#D40000]"
+							>queries</span
+						>
+					</h2>
 					<p class="mt-4 text-gray-600">
-						Got a question or need assistance? We're here to help! Whether you have an inquiry, need support, or just want to share your thoughts, feel free to get in touch.
+						Got a question or need assistance? We're here to help!
+						Whether you have an inquiry, need support, or just want
+						to share your thoughts, feel free to get in touch.
 					</p>
-					<p class="mt-4 text-xl font-semibold">support@sastika.com</p>
+					<p class="mt-4 text-xl font-semibold">
+						support@sastika.com
+					</p>
 				</div>
 			</div>
-	
+
 			<!-- Right Column - Form -->
 			<div>
-				<h1 class="text-4xl font-bold mb-8">Contact <span class="font-corinthia text-5xl text-[#D40000]">Us</span></h1>
-				
+				<h1 class="text-4xl font-bold mb-8">
+					Contact <span class="font-corinthia text-5xl text-[#D40000]"
+						>Us</span
+					>
+				</h1>
+
 				<form class="space-y-6">
 					<div>
-						<input 
-							type="text" 
-							placeholder="Name" 
+						<input
+							type="text"
+							placeholder="Name"
+							name="name"
 							class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-[#D40000] focus:ring-1 focus:ring-[#D40000] outline-none transition"
 						/>
 					</div>
-					
+
 					<div>
-						<input 
-							type="email" 
-							placeholder="Email" 
+						<input
+							type="email"
+							placeholder="Email"
+							name="email"
 							class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-[#D40000] focus:ring-1 focus:ring-[#D40000] outline-none transition"
 						/>
 					</div>
-					
+
 					<div>
-						<input 
-							type="tel" 
-							placeholder="Number" 
+						<input
+							type="tel"
+							placeholder="Number"
+							name="number"
 							class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-[#D40000] focus:ring-1 focus:ring-[#D40000] outline-none transition"
 						/>
 					</div>
-					
+
 					<div>
-						<textarea 
-							placeholder="Message" 
-							rows="4" 
+						<textarea
+							placeholder="Message"
+							name="message"
+							rows="4"
 							class="w-full px-4 py-3 rounded-md border border-gray-300 focus:border-[#D40000] focus:ring-1 focus:ring-[#D40000] outline-none transition"
 						></textarea>
 					</div>
-					
-					<button 
-						type="submit" 
+
+					<button
+						type="submit"
 						class="bg-[#D40000] text-white px-8 py-3 rounded-md hover:bg-red-700 transition-colors"
 					>
 						Send Us An Email
@@ -107,5 +128,99 @@ const seo = {
 			</div>
 		</div>
 	</section>
+	<div id="notification-container" class="fixed inset-0 pointer-events-none">
+	</div>
+
+	<script>
+		const apiUrl = "https://hlomail-api.onrender.com/api/contact";
+
+		document.addEventListener("DOMContentLoaded", () => {
+			// Select the form element
+			const form = document.querySelector("form");
+			const notificationContainer = document.querySelector(
+				"#notification-container",
+			);
+
+			function showNotification(message: string, type: string) {
+				const notification = document.createElement("div");
+				notification.className = `fixed bottom-10 right-5 px-6 py-3 rounded-md text-white shadow-lg transition duration-300 ${
+					type === "success" ? "bg-green-500" : "bg-red-500"
+				}`;
+				notification.textContent = message;
+				if (notificationContainer) {
+					notificationContainer.appendChild(notification);
+				}
+				// Automatically remove the notification after 3 seconds
+				setTimeout(() => {
+					notification.remove();
+				}, 3000);
+			}
+
+			// Ensure the form element exists before adding the event listener
+			if (form) {
+				form.addEventListener("submit", async (event) => {
+					const submitButton = form.querySelector(
+						"button[type='submit']",
+					);
+					if (submitButton) {
+						submitButton.textContent = "Sending...";
+					}
+					event.preventDefault(); // Prevent default form submission
+
+					// Gather form data
+					const formData = new FormData(form);
+					const data = Object.fromEntries(formData.entries());
+					console.log(JSON.stringify(data));
+
+					// URL to send the request
+
+					try {
+						// Send data to the server
+						const response = await fetch(apiUrl, {
+							method: "POST",
+							headers: {
+								"Content-Type": "application/json",
+							},
+							body: JSON.stringify(data),
+						});
+
+						// Handle response
+						if (response.ok) {
+							const result = await response.json();
+							showNotification(
+								"Message sent successfully!",
+								"success",
+							);
+							form.reset(); // Clear the form
+						} else {
+							const error = await response.json();
+
+							showNotification(
+								"Failed to send message",
+								"error",
+							);
+						}
+					} catch (error) {
+						console.error("Error:", error);
+						showNotification(
+							"An unexpected error occurred. Please try again later.",
+							"error",
+						);
+					} finally {
+						const submitButton = form.querySelector(
+							"button[type='submit']",
+						);
+						if (submitButton) {
+							submitButton.textContent = "Send Us An Email";
+							// submitButton.disabled = false;
+						}
+					}
+				});
+			} else {
+				console.error("Form element not found");
+			}
+		});
+	</script>
+
 	<Footer />
 </Layout>
