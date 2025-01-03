@@ -230,6 +230,7 @@ const seo = {
 				</div>
 			</div>
 
+		
 			<div
 				class="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-400 rounded-lg p-8 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-4xl mb-8 mx-auto shadow-lg mt-16"
 			>
@@ -272,33 +273,34 @@ const seo = {
 			</div>
 			</div>
 
-			<div class="flex flex-col lg:flex-row items-center justify-center">
-				<!-- Left Section (Text Boxes) -->
-				<div class="flex flex-col space-y-6">
-				<div class="bg-gray-100 shadow-md w-32 h-32 pt-6 rounded-lg text-center">
-					<h2 class="text-3xl font-bold text-black">57+</h2>
-					<p class="text-gray-600">Satisfied Clients</p>
+			<!-- Display Only in Mobile  -->
+			<div class="block md:hidden lg:hidden">
+
+				<div class="grid grid-cols-2">
+					<div class="flex flex-col space-y-6">
+						<div class="bg-gray-100 shadow-md w-32 h-32 pt-6 rounded-lg text-center">
+							<h2 class="text-3xl font-bold text-black">57+</h2>
+							<p class="text-gray-600">Satisfied Clients</p>
+						</div>
+						<div class="bg-gray-100 shadow-md w-32 h-32 rounded-lg pt-6 text-center">
+							<h2 class="text-3xl font-bold text-black">5+</h2>
+							<p class="text-gray-600">Years of Service</p>
+						</div>
+						<div class="bg-[#D40000] shadow-md w-32 h-32 rounded-lg pt-6 text-center">
+							<h2 class="text-3xl font-bold text-white">17+</h2>
+							<p class="text-white text-sm pt-2">Successful Projects</p>
+						</div>
+					</div>
+					<div >
+						<img
+							src="/index/img3.svg"
+							alt="Team Discussion"
+							class="rounded-lg w-[400px] h-[400px] "
+						/>
+					</div>
+					
+					
 				</div>
-				<div class="bg-gray-100 shadow-md w-32 h-32 rounded-lg pt-6 text-center">
-					<h2 class="text-3xl font-bold text-black">5+</h2>
-					<p class="text-gray-600">Years of Service</p>
-				</div>
-				<div class="bg-[#D40000] shadow-md w-32 h-32 rounded-lg pt-6 text-center">
-					<h2 class="text-3xl font-bold text-white">17+</h2>
-					<p class="text-white text-sm pt-2">Successful Projects</p>
-				</div>
-				</div>
-			
-				<!-- Center Section (Image) -->
-				<div >
-				<img
-					src="/index/img3.svg"
-					alt="Team Discussion"
-					class="rounded-lg w-[400px] h-[400px] "
-				/>
-				</div>
-			
-				<!-- Right Section (Text Content) -->
 				<div class="max-w-lg text-center lg:text-left">
 					<div class="order-1 md:order-none">
 						<div class="flex">
@@ -335,6 +337,71 @@ const seo = {
 				</div>
 			</div>
 
+			<!-- Display only on Desktop  -->
+			<div class="hidden md:block lg:block">
+				<div class=" flex flex-col lg:flex-row md:flex-row items-center justify-center">
+					<!-- Left Section (Text Boxes) -->
+					<div class="flex flex-col space-y-6">
+					<div class="bg-gray-100 shadow-md w-32 h-32 pt-6 rounded-lg text-center">
+						<h2 class="text-3xl font-bold text-black">57+</h2>
+						<p class="text-gray-600">Satisfied Clients</p>
+					</div>
+					<div class="bg-gray-100 shadow-md w-32 h-32 rounded-lg pt-6 text-center">
+						<h2 class="text-3xl font-bold text-black">5+</h2>
+						<p class="text-gray-600">Years of Service</p>
+					</div>
+					<div class="bg-[#D40000] shadow-md w-32 h-32 rounded-lg pt-6 text-center">
+						<h2 class="text-3xl font-bold text-white">17+</h2>
+						<p class="text-white text-sm pt-2">Successful Projects</p>
+					</div>
+					</div>
+				
+					<!-- Center Section (Image) -->
+					<div >
+					<img
+						src="/index/img3.svg"
+						alt="Team Discussion"
+						class="rounded-lg w-[400px] h-[400px] "
+					/>
+					</div>
+				
+					<!-- Right Section (Text Content) -->
+					<div class="max-w-lg text-center lg:text-left">
+						<div class="order-1 md:order-none">
+							<div class="flex">
+								<img
+									src="/icons/icon3.svg"
+									alt="Teamwork"
+									class="rounded-lg object-cover"
+								/>
+								<p class="text-black-600 text-lg mx-2">
+									Solutions Tailored for Global Success
+								</p>
+							</div>
+
+							<h2 class="text-5xl font-bold text-gray-800 mb-4">
+								Area of <span class="text-[#D40000]">Expertise</span>
+							</h2>
+							<p class="text-gray-800 mb-5">
+								At Sastika Solutions, we excel in simplifying the
+								complexities of international career transitions. From
+								securing work permits and visas to connecting you with
+								top global employers, our specialized services are
+								designed to make your journey seamless. With
+								personalized support and unmatched expertise, we empower
+								you to unlock your full potential on a global stage.
+							</p>
+							<a 
+								href="/services" 
+								class="inline-flex bg-[#D40000] items-center px-6 py-3 text-white font-semibold text-lg rounded-md hover:shadow-lg hover:bg-red-400 transition-shadow duration-200"
+							>
+								Our Services 
+								<span class="ml-2 text-xl"><img src="/index/arrow.svg" class="bg-white rounded-lg" /></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 	
 		<div
 		  class="container mt-16 mx-auto flex flex-col md:flex-row items-center md:items-start gap-6"
