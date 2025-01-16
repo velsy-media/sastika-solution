@@ -16,7 +16,7 @@ const seo = {
 	<Navbar currentPath="/services" />
 	<section class="relative">
 		<!-- Background image -->
-		<div class="absolute inset-0 z-0">
+		<div class="absolute inset-0 -z-10">
 			<img
 				src="/hero-image/service.webp"
 				alt="Background"
@@ -37,14 +37,14 @@ const seo = {
 			/>
 		</div>
 	</section>
-	<main class="relative min-h-screen flex flex-col items-center py-10 px-6">
+	<main class="relative min-h-screen flex flex-col items-center py-10 px-6 z-30">
 		<!-- Services Section -->
-		<section class="containers mt-16">
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+		<section class="containers -my-24 ">
+			<div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-6 gap-y-14 ">
 				<!-- Card 1 -->
-				<div class="bg-white p-6 rounded-lg shadow-md text-center">
+				<div class="p-6 w-72 h-64 rounded-lg shadow-md text-center relative bg-white">
 					<div
-						class="w-12 h-12 mx-auto bg-[#D40000] rounded-md flex items-center justify-center mb-4"
+					class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4 absolute -top-5 left-1/2 -translate-x-1/2"
 					>
 						<img
 							src="/service/img1.svg"
@@ -52,7 +52,7 @@ const seo = {
 							class="object-cover"
 						/>
 					</div>
-					<h3 class="text-lg font-bold">
+					<h3 class="text-lg font-bold mt-2">
 						Global Recruitment Solutions
 					</h3>
 					<p class="text-sm text-gray-600 mt-2">
@@ -63,9 +63,9 @@ const seo = {
 					</p>
 				</div>
 				<!-- Card 2 -->
-				<div class="bg-white p-6 rounded-lg shadow-md text-center">
+				<div class="p-6 w-72 h-64 rounded-lg shadow-md text-center relative bg-white">
 					<div
-						class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4"
+						class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4 absolute -top-5 left-1/2 -translate-x-1/2"
 					>
 						<img
 							src="/service/img2.svg"
@@ -73,7 +73,7 @@ const seo = {
 							class="object-cover"
 						/>
 					</div>
-					<h3 class="text-lg font-bold">Visa Assistance</h3>
+					<h3 class="text-lg font-bold mt-2">Visa Assistance</h3>
 					<p class="text-sm text-gray-600 mt-2">
 						Navigating international visa processes is made simple
 						with our expert support. We assist with documentation,
@@ -82,9 +82,9 @@ const seo = {
 					</p>
 				</div>
 				<!-- Card 3 -->
-				<div class="bg-white p-6 rounded-lg shadow-lg text-center">
+				<div class="p-6 w-72 h-64 rounded-lg shadow-md text-center relative bg-white">
 					<div
-						class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4"
+					class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4 absolute -top-5 left-1/2 -translate-x-1/2"
 					>
 						<img
 							src="/service/img3.svg"
@@ -92,7 +92,7 @@ const seo = {
 							class="object-cover"
 						/>
 					</div>
-					<h3 class="text-lg font-bold">Onboarding Assistance</h3>
+					<h3 class="text-lg font-bold mt-2">Onboarding Assistance</h3>
 					<p class="text-sm text-gray-600 mt-2">
 						Transitioning to a new job and country can be
 						challenging. Our onboarding support includes cultural
@@ -102,11 +102,11 @@ const seo = {
 				</div>
 			</div>
 
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
+			<div class="grid grid-cols-1 lg:grid-cols-3 mt-14 lg:mt-16 lg:gap-6 gap-y-14">
 				<!-- Card 1 -->
-				<div class="bg-white p-6 rounded-lg shadow-md text-center">
+				<div class="p-6 w-72 h-64 rounded-lg shadow-md text-center relative bg-white">
 					<div
-						class="w-12 h-12 mx-auto bg-[#D40000] rounded-md flex items-center justify-center mb-4"
+					class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4 absolute -top-5 left-1/2 -translate-x-1/2"
 					>
 						<img
 							src="/service/img4.svg"
@@ -114,7 +114,7 @@ const seo = {
 							class="object-cover"
 						/>
 					</div>
-					<h3 class="text-lg font-bold">Training and Development</h3>
+					<h3 class="text-lg font-bold mt-2">Training and Development</h3>
 					<p class="text-sm text-gray-600 mt-2">
 						We empower professionals to excel in global markets
 						through tailored training programs. From interview
@@ -123,9 +123,9 @@ const seo = {
 					</p>
 				</div>
 				<!-- Card 2 -->
-				<div class="bg-white p-6 rounded-lg shadow-md text-center">
+				<div class="p-6 w-72 h-64 rounded-lg shadow-md text-center relative bg-white">
 					<div
-						class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4"
+					class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4 absolute -top-5 left-1/2 -translate-x-1/2"
 					>
 						<img
 							src="/service/img5.svg"
@@ -133,7 +133,7 @@ const seo = {
 							class="object-cover"
 						/>
 					</div>
-					<h3 class="text-lg font-bold">Employer Support Services</h3>
+					<h3 class="text-lg font-bold mt-2">Employer Support Services</h3>
 					<p class="text-sm text-gray-600 mt-2">
 						We provide global employers with end-to-end hiring
 						solutions, including comprehensive candidate screening,
@@ -142,9 +142,9 @@ const seo = {
 					</p>
 				</div>
 				<!-- Card 3 -->
-				<div class="bg-white p-6 rounded-lg shadow-lg text-center">
+				<div class="p-6 w-72 h-64 rounded-lg shadow-md text-center relative bg-white">
 					<div
-						class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4"
+					class="w-12 h-12 mx-auto bg-[#D40000] text-white rounded-md flex items-center justify-center mb-4 absolute -top-5 left-1/2 -translate-x-1/2"
 					>
 						<img
 							src="/service/img6.svg"
@@ -152,7 +152,7 @@ const seo = {
 							class="object-cover"
 						/>
 					</div>
-					<h3 class="text-lg font-bold">
+					<h3 class="text-lg font-bold mt-2">
 						Long-Term Relationship Building
 					</h3>
 					<p class="text-sm text-gray-600 mt-2">
@@ -168,7 +168,7 @@ const seo = {
 	</main>
 	<div class="mx-7">
 		<div
-		class="bg-gradient-to-r mt-16 from-orange-600 via-orange-500 to-amber-400 rounded-lg p-8 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-4xl mb-8 mx-auto shadow-lg"
+		class="bg-gradient-to-r mt-16 lg:-mt-24 from-orange-600 via-orange-500 to-amber-400 rounded-lg p-8 text-white flex flex-col sm:flex-row items-start sm:items-center justify-between max-w-4xl mb-8 mx-auto shadow-lg"
 	>
 		<!-- Text Section -->
 		<div>
